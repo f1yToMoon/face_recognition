@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 14)
 
 find_package( OpenCV REQUIRED )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable(face_hist main.cpp)
+add_executable(face_hist main_hist.cpp)
 target_link_libraries(face_hist ${OpenCV_LIBS} )
