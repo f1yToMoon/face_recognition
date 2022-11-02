@@ -10,7 +10,6 @@ int main() {
     int down_height = 56;
     std::vector<std::vector<int>> f;
     for (int i = 0; i < 40; ++i) {
-        std::vector<int> hist(256);
         cv::Mat resized_down;
         cv::Mat mat = cv::imread("/home/nick/images/archive/s" + std::to_string(i) + "/1.pgm", cv::IMREAD_GRAYSCALE);
         resize(mat, resized_down, cv::Size(down_width, down_height), cv::INTER_LINEAR);
